@@ -4,4 +4,4 @@
     sh-4.4# netstat -tpan
     Active Internet connections (servers and established)
     Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-    tcp        0      0 0.0.0.0:9300            0.0.0.0:*               LISTEN      1/csvserver
+    tcp        0      0 0.0.0.0:9393             0.0.0.0:*               LISTEN      1/csvserver
