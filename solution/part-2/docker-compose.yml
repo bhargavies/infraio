@@ -1,0 +1,11 @@
+version: "2"
+services:
+  mycsvserver:
+    image: infracloudio/csvserver:latest
+    container_name: csvserver_container
+    ports:
+      - 9393:9300
+    volumes:
+      - /home/beddalasomasekar/inputfile:/csvserver/inputdata
+    environment:
+      CSVSERVER_BORDER: "orange"
