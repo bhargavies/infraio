@@ -1,0 +1,4 @@
+  4. Run the container again in the background with file generated in (3) available inside the container (remember the reason you found in (2)).
+
+    Solution:
+    docker run -d -v /home/beddalasomasekar/inputdata:/csvserver/inputdata --name test2 infracloudio/csvserver:latest

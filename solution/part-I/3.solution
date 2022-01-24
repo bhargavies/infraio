@@ -1,0 +1,15 @@
+  3. Write a bash script `gencsv.sh` to generate a file named `inputFile` whose content looks like:
+     ```csv
+     0, 234
+     1, 98
+     2, 34
+     ```
+     These are comma separated values with index and a random number.
+     - Running the script without any arguments, should generate the file `inputFile` with 10 such entries in current directory.
+     - *You should be able to extend this script to generate any number of entries, for example 100000 entries.*
+     - Run the script to generate the `inputFile`. Make sure that the generated file is readable by other users.
+
+    Solution:
+    gencsv.sh
+    for i in `seq 10`; do echo $RANDOM, $RANDOM; done > /csvserver/inputdata
+    chmod 755 /csvserver/inputdata

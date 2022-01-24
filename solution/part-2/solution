@@ -1,0 +1,3 @@
+root@training-worker2:/home/beddalasomasekar# docker-compose -f dockercompose.yml up -d
+Creating network "beddalasomasekar_default" with the default driver
+Creating csvserver_container ... done

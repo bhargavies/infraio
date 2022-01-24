@@ -1,0 +1,7 @@
+5. Get shell access to the container and find the port on which the application is listening. Once done, stop / delete the running container.
+  Solution:
+    root@training-worker2:/home/beddalasomasekar# docker exec -it ceea0ba1f0e9 sh 
+    sh-4.4# netstat -tpan
+    Active Internet connections (servers and established)
+    Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+    tcp        0      0 0.0.0.0:9300            0.0.0.0:*               LISTEN      1/csvserver

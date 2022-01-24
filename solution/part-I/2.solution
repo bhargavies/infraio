@@ -1,0 +1,8 @@
+  2. If it's failing then try to find the reason, once you find the reason, move to the next step.
+     Solution:
+      root@training-worker2:/home/beddalasomasekar# docker logs -f 94777b1bd6f5
+      2022/01/24 09:37:09 error while reading the file "/csvserver/inputdata": open /csvserver/inputdata: no such file or directory
+
+     Create input file and specify the input file.
+
+     docker run -d -v /home/beddalasomasekar/inputfile:/csvserver/inputdata --name infracloudio infracloudio/csvserver:latest

@@ -1,0 +1,8 @@
+1. Run the container image `infracloudio/csvserver:latest` in background and check if it's running.
+
+  Solution:
+  docker run -d --name infracloudio infracloudio/csvserver:latest
+  docker ps -a
+      root@training-worker2:/home/beddalasomasekar# docker ps -a
+    CONTAINER ID   IMAGE                                       COMMAND                   CREATED         STATUS                     PORTS     NAMES
+    94777b1bd6f5   infracloudio/csvserver:latest               "/csvserver/csvserver"    5 seconds ago   Exited (1) 3 seconds ago             infracloudio

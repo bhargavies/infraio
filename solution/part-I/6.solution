@@ -1,0 +1,6 @@
+  6. Same as (4), run the container and make sure,
+     - The application is accessible on the host at http://localhost:9393
+     - Set the environment variable `CSVSERVER_BORDER` to have value `Orange`.
+
+    Solution:
+     docker run -d -v /home/beddalasomasekar/inputdata:/csvserver/inputdata -e CSVSERVER_BORDER=orange --publish 9300:9393 --name test3 infracloudio/csvserver:latest
