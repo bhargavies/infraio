@@ -1,10 +1,11 @@
 docker run -d --name infracloudio infracloudio/csvserver:latest
+
 docker ps -a
 
 # check for docker  log
 docker logs -f <conID>
 root@training-worker2:/home/beddalasomasekar# docker logs -f 94777b1bd6f5
-      2022/01/24 09:37:09 error while reading the file "/csvserver/inputdata": open /csvserver/inputdata: no such file or directory
+2022/01/24 09:37:09 error while reading the file "/csvserver/inputdata": open /csvserver/inputdata: no such file or directory
 
 # from above error it says input file is missing create the input file and data to it from gencsv.sh script
 
